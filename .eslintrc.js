@@ -1,8 +1,11 @@
 module.exports = {
     "extends": "google",
     "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+        },
     },
     "rules": {
         "arrow-parens": "off",

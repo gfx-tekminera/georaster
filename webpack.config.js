@@ -45,7 +45,11 @@ module.exports = (env, argv) => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['env'],
+              presets: ['@babel/preset-env'],
+              plugins: [
+                require('babel-plugin-transform-object-rest-spread'),
+                require('babel-plugin-transform-nullish-operator').default,
+              ],
             },
           },
         },

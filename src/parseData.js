@@ -1,7 +1,8 @@
 import {fromArrayBuffer, fromUrl, fromBlob} from 'geotiff';
 import {getPalette} from 'geotiff-palette';
-import calcImageStats from 'calc-image-stats';
+// import calcImageStats from 'calc-image-stats';
 import {unflatten} from './utils.js';
+import calcImageStats from './calcImageStats.js';
 
 function processResult(result) {
   const stats = calcImageStats(result.values, {

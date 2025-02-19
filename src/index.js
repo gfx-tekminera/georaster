@@ -189,12 +189,3 @@ const parseGeoraster = (input, metadata, debug, options = {}) => {
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   module.exports = parseGeoraster;
 }
-
-/*
-    The following code allows you to use GeoRaster without requiring
-*/
-if (typeof window !== 'undefined') {
-  window['parseGeoraster'] = parseGeoraster;
-} else if (typeof self !== 'undefined') {
-  self['parseGeoraster'] = parseGeoraster; // jshint ignore:line
-}

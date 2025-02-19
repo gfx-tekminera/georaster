@@ -47,11 +47,12 @@
   },
   "homepage": "https://github.com/GeoTIFF/georaster#readme",
   "dependencies": {
-    "calc-image-stats": "^0.9.0",
+    "calc-stats": "^2.6.0",
     "cross-fetch": "^3.0.4",
     "georaster-to-canvas": "0.2.0",
     "geotiff": "1.0.0-beta.13",
     "geotiff-palette": "0.0.0",
+    "guess-image-layout": "^0.1.0",
     "patch-package": "^8.0.0",
     "postinstall-postinstall": "^2.1.0",
     "threads": "^1.4.0",
@@ -60,14 +61,18 @@
     "txml": "3.1.2",
     "underscore": "^1.8.3",
     "worker-loader": "^2.0.0",
+    "xdim": "^1.10.1",
     "xml-utils": "^0.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
     "@babel/types": "^7.9.5",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-nullish-operator": "^1.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
     "browserify": "^14.5.0",
     "d3-require": "^1.2.4",
     "eslint": "^5.7.0",
@@ -78,5 +83,6 @@
     "webpack": "^4.12.0",
     "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.0.8"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
